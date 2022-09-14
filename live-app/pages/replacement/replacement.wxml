@@ -1,0 +1,53 @@
+<!--pages/replacement/replacement.wxml-->
+<view class="replacement">
+  <view class="contentBox">
+    <view class="content">
+      <view class="content-top">
+        <text class="title">{{caption}}</text>
+      </view>
+      <view class="content-center">
+        <form class="form" wx:if="{{showNext}}" bindsubmit="replacementNext">
+          <view class="information">
+            <view class="information-top">
+              <van-cell-group style="width:100%;">
+                <van-field label="手机号" value="{{ phoneNumber }}" placeholder="请输入手机号" border="{{ false }}" name="phoneNumber" bind:input="onInput" />
+              </van-cell-group>
+              <van-cell-group>
+                <van-field label="短信验证码" value="{{ captcha }}" placeholder="请输入验证码" border="{{ false }}" name="captcha">
+                  <van-button wx:if="{{showCode}}" custom-class="code" slot="button" size="small" bindtap="sendSms">
+                    获取验证码
+                  </van-button>
+                  <van-button wx:else size="small" custom-class="code" slot="button">{{ timer }}秒后重新获取</van-button>
+                </van-field>
+              </van-cell-group>
+            </view>
+            <view class="information-bottom">
+              <van-button custom-class="enter" form-type="submit">下一步</van-button>
+            </view>
+          </view>
+        </form>
+        <form class="form" wx:else bindsubmit="replacementSubmit">
+          <view class="information">
+            <view class="information-top">
+              <van-cell-group style="width:100%;">
+                <van-field label="手机号" value="{{ newPhoneNumber }}" placeholder="请输入新手机号" border="{{ false }}" name="newPhoneNumber" bind:input="onNewInput" />
+              </van-cell-group>
+              <van-cell-group>
+                <van-field label="短信验证码" value="{{ newCaptcha }}" placeholder="请输入验证码" border="{{ false }}" name="newCaptcha">
+                  <van-button wx:if="{{showNewCode}}" custom-class="code" slot="button" size="small" bindtap="sendNewSms">
+                    获取验证码
+                  </van-button>
+                  <van-button wx:else size="small" custom-class="code" slot="button">{{ newTimer }}秒后重新获取</van-button>
+                </van-field>
+              </van-cell-group>
+            </view>
+            <view class="information-bottom">
+              <van-button custom-class="enter" form-type="submit">确认更改</van-button>
+            </view>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+  <van-toast id="van-toast" />
+</view>

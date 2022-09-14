@@ -1,0 +1,197 @@
+<view class="audience">
+  <live-player src="{{liveInfo.pullFlowRtmpAddress}}" mode="live" autoplay bindstatechange="statechange" binderror="error" object-fit="fillCrop" style="width: 100%; height: 100vh;">
+  </live-player>
+  <!-- <view class="movie" wx:if="{{liveInfo.playBackAddress}}">
+    <video src="{{liveInfo.playBackAddress}}" style="width:100%;height:450rpx;display:block" object-fit="cover"></video>
+  </view>
+  <view class="movie" wx:else style="height:100vh">
+    <video src="https://res1.qdszgh.cn/%E5%BF%83%E7%90%86/%E8%AE%A9%E5%BF%83%E7%81%B5%E8%87%AA%E7%94%B160.mp4" controls="{{false}}" style="width:100%;height:100%" object-fit="cover">
+    </video>
+  </view> -->
+  <!-- <video src="https://res1.qdszgh.cn/%E5%BF%83%E7%90%86/%E8%AE%A9%E5%BF%83%E7%81%B5%E8%87%AA%E7%94%B160.mp4" controls="{{false}}" style="width:50%;height:560rpx;position:absolute;right:0;margin:150rpx 0 0;" object-fit="cover"></video> -->
+  <view class="introduceBox">
+    <view class="introduce">
+      <view class="introduce-top">
+        <view class="stream">
+          <view class="stream-status">
+            <image style="width:20rpx;height:20rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/circle.png"></image>
+            <view class="message">直播中</view>
+          </view>
+          <view class="stream-theme">
+            <view class="title">{{liveInfo.name}}</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="introduce-center">
+        <view class="introduce-center-left" bindtap="switchLiveBrief">
+          <view class="brief_normal" wx:if="{{!showBrief}}">
+            <text class="message">直播简介</text>
+          </view>
+          <view class="brief_active" wx:else>
+            <text class="message">回到聊天</text>
+          </view>
+          <image style="width:12rpx;height:21rpx;" wx:if="{{!showBrief}}" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/arrow-right.png"></image>
+          <image style="width:12rpx;height:22rpx;" wx:else src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/arrow-gray-left.png"></image>
+        </view>
+        <view class="introduce-center-right">
+          <view class="browse" wx:if="{{liveInfo.viewPersonTime}}">
+            <image style="width:24rpx;height:24rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/browse.png"></image>
+            <view class="number">{{liveInfo.viewPersonTime}}</view>
+          </view>
+          <view class="like" wx:if="{{likeCount}}">
+            <image style="width:24rpx;height:24rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/like.png"></image>
+            <view class="number">{{likeCount}}</view>
+          </view>
+        </view>
+      </view>
+      <!-- <view class="introduce-bottom">
+        <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/watermark.png"></image>
+      </view> -->
+    </view>
+  </view>
+  <view class="review {{bottomDistance ?'active':''}}" style="top:{{emojiShow||keyboardHeight?topDistance:''}}rpx;padding-bottom:{{goodsHeight}}rpx">
+    <view class="information">
+      <view class="container animated {{showAccess ? 'fadeInRight' : 'fadeOutLeft'}}" wx:for="{{givePresentList}}" wx:key="id">
+        <view class="profile">
+          <image style="width: 72rpx;height: 72rpx;margin: 8rpx 0 8rpx 10rpx;border-radius: 50%;" src="{{item.avatar}}" />
+        </view>
+        <view class="info">
+          <text class="name">{{ item.realname }}：</text>
+          <text class="message">送{{ item.name }} *1</text>
+        </view>
+        <view class="gift">
+          <image src="{{item.icon}}" />
+        </view>
+      </view>
+    </view>
+    <view class="comment">
+      <scroll-view class="comment_scroll" id="commentScroll" scroll-y="true" style="height: {{emojiShow||keyboardHeight?( windowHeight* (1 / phoneHeight)-keyboardHeight-toolViewHeight)/2:233* (1 / phoneHeight)-goodsHeight}}rpx" scroll-with-animation="true" scroll-top="{{scrollTop}}" scroll-into-view="{{toView}}">
+        <view class="comment_list">
+          <view class="comment_item_container" wx:for="{{commentList}}" wx:key="id">
+            <view class="container_top" wx:if="{{item.pushType == 0}}">
+              <view class="comment_item">
+                <view class="comment_item_left">
+                  <image src="{{item.avatar}}"></image>
+                </view>
+                <view class="comment_item_right">
+                  <text class="name">{{item.realname}}：</text>
+                  <view style="display:flex;align-items:center;">
+                    <view style="display: flex;" wx:for="{{item.message}}" wx:for-item="message" wx:key="index">
+                      <text wx:if="{{message.type == 1}}" class="message">{{message.content}}</text>
+                      <view wx:if="{{message.type == 2}}" style="display: inline-block; width: {{lineHeight}}px; height: {{lineHeight}}px">
+                        <view class="{{message.imageClass}}" style="background-image: url({{emojiSource}});transform-origin: 0 0; transform: scale({{lineHeight / 64}});"></view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!-- <view class="container_center" wx:if="{{item.pushType == 3}}">
+              <view class="gift">
+                <text class="name">{{ item.realname }}</text>
+                <text class="give">送出</text>
+                <text class="message">{{ item.name }}*1</text>
+              </view>
+            </view> -->
+          </view>
+          <view id="toView"></view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class="heart">
+      <!-- <live-like likeCount="{{likeCount}}"></live-like> -->
+      <live-love thumbNums="{{likeCount}}"></live-love>
+      <view bindtap="clickHandler" class="live_like">
+        <text class="count" wx:if="{{!transitionLikeCount && likeCount}}">{{likeCount}}</text>
+        <text class="count" style="width:48rpx;" wx:if="{{transitionLikeCount && likeCount}}">{{transitionLikeCount}}</text>
+      </view>
+    </view>
+    <view class="goodsBox" wx:if="{{showGoods}}">
+      <view class="goods">
+        <wxs module="m1">
+          var getPicture = function (goodsPicture) {
+            return goodsPicture ? goodsPicture.split(',')[0] : ''
+          }
+          module.exports.getPicture = getPicture
+        </wxs>
+        <image class="picture" src="{{m1.getPicture(goodsInfo.goodsPicture)}}" mode="aspectFill" alt="" />
+        <view class="information">
+          <text class="title">{{ goodsInfo.goodsName }}</text>
+          <view class="info">
+            <view class="info-left">
+              <text class="symbol">￥</text>
+              <text class="price">{{ goodsInfo.goodsPrice }}</text>
+              <text class="sell">已售：{{ goodsInfo.goodsSalesk }}</text>
+            </view>
+            <view class="info-right">
+              <!-- <van-button custom-class="buy">购买</van-button> -->
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="reply_wrp" style="bottom:{{keyboardHeight?keyboardHeight-bottomDistance* (1 / phoneHeight):0}}rpx;padding-bottom:{{bottomDistance* (1 / phoneHeight)}}rpx">
+    <view class="send {{emojiShow ? 'show': ''}}">
+      <view class="information">
+        <!-- <view class="mike" bindtap="connectMike">
+        <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/mike.png"></image>
+      </view> -->
+        <view class="shopping" wx:if="{{cartInfo.isCart}}" bindtap="getShoppingInfo">
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/shopping.png"></image>
+        </view>
+        <view class="info" style="width:{{cartInfo.isCart?448:''}}rpx">
+          <input type="text" style="width:{{cartInfo.isCart?'76%':''}}" class="text" placeholder-style="color:#ccc;" placeholder="这里是输入的内容" cursor="{{cursor}}" value="{{message}}" adjust-position="{{false}}" bindconfirm="sendMessage" bindblur="onBlur" bindinput="onInput" bindkeyboardheightchange="onkeyboardHeightChange" />
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/expression.png" bindtap="showEmoji"></image>
+        </view>
+        <view class="add" wx:if="{{message}}">
+          <van-button custom-style="width: 160rpx;height: 72rpx;background: linear-gradient(270deg, #ff5736 0%, #ff2a00 100%);border-radius: 68rpx;font-size: 28rpx;font-weight: normal;color: #ffffff;line-height: 28rpx;border:none;" bind:click="sendMessage">发送</van-button>
+        </view>
+        <view class="gift" bindtap="getGiftInfo" wx:if="{{!message}}">
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/gift.png"></image>
+        </view>
+        <view class="more" wx:if="{{!message}}">
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/more.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="reply_panel_wrp" style="height: {{emojiShow ? 300* (1 / phoneHeight) : 200* (1 / phoneHeight)}}rpx;" hidden="{{!emojiShow}}">
+      <view class="reply_panel {{emojiShow ? 'show': ''}}" hidden="{{!emojiShow}}">
+        <mp-emoji source="{{emojiSource}}" class="mp-emoji" show-send="{{false}}" show-del="{{false}}" bindinsertemoji="insertEmoji"></mp-emoji>
+      </view>
+    </view>
+  </view>
+  <brief-info class="brief_info" wx:if="{{showBrief}}" showBrief="{{showBrief}}" movieHeight="{{225*(1 / phoneHeight)}}" windowHeight="{{windowHeight}}" liveInfo="{{liveInfo}}"></brief-info>
+  <shopping-list class="shopping_list" showShopping="{{showShopping}}" movieHeight="{{225*(1 / phoneHeight)}}" windowHeight="{{windowHeight}}" liveId="{{liveId}}" bind:close="closeShopping"></shopping-list>
+  <present-list class="present_list" wx:if="{{showPresent}}" showPresent="{{showPresent}}" movieHeight="{{225*(1 / phoneHeight)}}" windowHeight="{{windowHeight}}" bind:close="closeGift"></present-list>
+
+
+  <van-action-sheet show="{{ showMore }}" round="{{false}}">
+    <view class="restBox">
+      <view class="rest">
+        <view class="rest-top">
+          <text class="close" bindtap="onClose">关闭</text>
+        </view>
+        <view class="rest-center">
+          <view class="live">
+            <view class="live-top">
+              <text class="title">直播功能</text>
+            </view>
+            <view class="live-bottom">
+              <view class="microphone">
+                <view class="microphone-top">
+                  <text class="count">{{connectCount}}</text>
+                </view>
+                <view class="microphone-bottom">
+                  <text class="title">连麦</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-action-sheet>
+  <van-toast id="van-toast" />
+</view>

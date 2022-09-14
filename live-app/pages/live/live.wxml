@@ -1,0 +1,5 @@
+<live-pusher url="{{pushFlowAddress}}" mode="RTC" autopush device-position="{{isFront?'front':'back'}}" bindstatechange="statechange" style="width: 100%;height: {{liveForm =='0' ? '450rpx' : '100vh'}}">
+  <cover-view style="position:absolute;right:100rpx;bottom:100rpx;" bindtap="switch">
+    <cover-image style="width:80rpx;height:80rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/flip.png"></cover-image>
+  </cover-view>
+</live-pusher>

@@ -1,0 +1,118 @@
+.cartBox {
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    .cart {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin: 34rpx 0 0;
+      .shop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10rpx;
+        .shop-top {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          .store {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 34rpx;
+
+            .title {
+              font-size: 28rpx;
+              font-weight: normal;
+              color: #323332;
+              line-height: 28rpx;
+            }
+          }
+        }
+        .shop-center {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .container {
+            width: 90%;
+            display: flex;
+            margin: 0 0 34rpx 0;
+            padding: 0 0 34rpx 0;
+            border-bottom: 2rpx solid #f6f7f6;
+
+            .picture {
+              width: 172rpx;
+              height: 172rpx;
+              min-width: 172rpx;
+            }
+
+            .information {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              margin: 0 0 0 16rpx;
+              position: relative;
+
+              .title {
+                font-size: 32rpx;
+                font-weight: normal;
+                color: #323332;
+                line-height: 46rpx;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+              }
+
+              .info {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 34rpx 0 0;
+                position: absolute;
+                bottom: 0;
+
+                .info-left {
+                  display: flex;
+
+                  .symbol {
+                    font-size: 28rpx;
+                    font-weight: 600;
+                    color: #ff2a00;
+                    line-height: 44rpx;
+                  }
+
+                  .price {
+                    font-size: 36rpx;
+                    font-weight: 600;
+                    color: #ff2a00;
+                    line-height: 44rpx;
+                  }
+                }
+
+                .info-right {
+                  display: flex;
+
+                  .inventory {
+                    font-size: 24rpx;
+                    font-weight: normal;
+                    color: #989998;
+                    line-height: 24rpx;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cartBox::-webkit-scrollbar {
+    display: none;
+  }

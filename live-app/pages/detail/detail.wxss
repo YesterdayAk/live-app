@@ -1,0 +1,70 @@
+.detail {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.detail .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.detail .contentBox .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail .contentBox .content .content-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #FEFFFE;
+}
+.detail .contentBox .content .content-top .live_state {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 26rpx;
+  margin: 30rpx 0 0 38rpx;
+}
+.detail .contentBox .content .content-top .live_title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  line-height: 46rpx;
+  margin: 24rpx 0 0 38rpx;
+}
+.detail .contentBox .content .content-top .live_message {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 42rpx;
+  margin: 24rpx 38rpx 30rpx;
+  text-indent: 50rpx;
+}
+.detail .contentBox .content .content-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 78rpx;
+  left: 0;
+}
+.detail .contentBox .content .content-bottom .start {
+  width: 430rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+  border-radius: 80rpx;
+}
+.detail .contentBox .content .content-bottom .start image {
+  width: 46rpx;
+  height: 26rpx;
+}
+.detail .contentBox .content .content-bottom .start .title {
+  font-size: 32rpx;
+  font-weight: normal;
+  color: #FEFFFE;
+  line-height: 28rpx;
+  margin: 0 0 0 10rpx;
+}

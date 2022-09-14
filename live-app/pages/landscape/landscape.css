@@ -1,0 +1,561 @@
+.landscape {
+  min-height: 100vh;
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+.landscape .giveBox {
+  display: flex;
+  justify-content: center;
+}
+.landscape .giveBox .give {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.landscape .giveBox .give .container {
+  width: 390rpx;
+  display: flex;
+  height: 88rpx;
+  background: rgba(255, 42, 0, 0.34);
+  border-radius: 460rpx;
+}
+.landscape .giveBox .give .container .info {
+  display: flex;
+  flex-direction: column;
+}
+.landscape .giveBox .give .container .info .name {
+  width: 180rpx;
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: 26rpx;
+  margin: 16rpx 0 8rpx 8rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.landscape .giveBox .give .container .info .message {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #ffffff;
+  line-height: 26rpx;
+  margin: 0 0 0 10rpx;
+}
+.landscape .giveBox .give .container .gift {
+  display: flex;
+  align-items: flex-end;
+}
+.landscape .giveBox .give .container .gift image {
+  width: 136rpx;
+  height: 136rpx;
+}
+.landscape .introduceBox {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.landscape .introduceBox .introduce {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rpx 0;
+}
+.landscape .introduceBox .introduce .introduce-top {
+  width: 100%;
+  display: flex;
+}
+.landscape .introduceBox .introduce .introduce-top .stream {
+  display: flex;
+}
+.landscape .introduceBox .introduce .introduce-top .stream .stream-status {
+  width: 116rpx;
+  height: 52rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 82rpx;
+  background: #f4f4f4;
+}
+.landscape .introduceBox .introduce .introduce-top .stream .stream-status .message {
+  font-size: 22rpx;
+  font-weight: normal;
+  color: #ff2a00;
+  line-height: 22rpx;
+}
+.landscape .introduceBox .introduce .introduce-top .stream .stream-theme {
+  width: 580rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 10rpx;
+}
+.landscape .introduceBox .introduce .introduce-top .stream .stream-theme .title {
+  font-size: 32rpx;
+  font-weight: normal;
+  color: #323332;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 32rpx;
+}
+.landscape .introduceBox .introduce .introduce-center {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12rpx 0 0;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-left {
+  display: flex;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-left .brief_normal {
+  display: flex;
+  border-bottom: 4rpx solid #999999;
+  padding: 0 0 10rpx 0;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-left .brief_normal .message {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 26rpx;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-left .brief_active {
+  display: flex;
+  border-bottom: 4rpx solid #ff2a00;
+  padding: 0 0 10rpx 0;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-left .brief_active .message {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #ff2a00;
+  line-height: 26rpx;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-right {
+  display: flex;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-right .browse {
+  display: flex;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-right .browse .number {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 26rpx;
+  margin: 0 0 0 8rpx;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-right .like {
+  display: flex;
+  margin: 0 0 0 18rpx;
+}
+.landscape .introduceBox .introduce .introduce-center .introduce-center-right .like .number {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 26rpx;
+  margin: 0 0 0 8rpx;
+}
+.landscape .introduceBox .introduce .introduce-bottom {
+  margin: 14rpx 0 0;
+}
+.landscape .introduceBox .introduce .introduce-bottom image {
+  width: 116rpx;
+  height: 48rpx;
+}
+.landscape .review {
+  width: 100%;
+  display: flex;
+  background: #fff;
+  position: relative;
+}
+.landscape .review .comment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.landscape .review .comment .comment_scroll {
+  width: 100%;
+  display: flex;
+}
+.landscape .review .comment .comment_scroll .comment_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top {
+  width: 100%;
+  display: flex;
+  margin: 0 0 20rpx 0;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12rpx;
+  padding: 10rpx;
+  word-break: break-all;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item .comment_item_left {
+  display: flex;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item .comment_item_left image {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item .comment_item_right {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10rpx;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item .comment_item_right .name {
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_top .comment_item .comment_item_right .message {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_center .gift {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 24rpx;
+  padding: 10rpx 40rpx;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_center .gift .name,
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_center .gift .message {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #fff;
+  line-height: 24rpx;
+}
+.landscape .review .comment .comment_scroll .comment_list .comment_item_container .container_center .gift .give {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #fff;
+  line-height: 24rpx;
+  margin: 0 10rpx;
+}
+.landscape .review .comment .comment_scroll ::-webkit-scrollbar {
+  display: none;
+}
+.landscape .review .heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.landscape .review .heart .live_like {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  bottom: 30rpx;
+  right: 20rpx;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/heart.png');
+}
+.landscape .review .heart .live_like .count {
+  display: inline-block;
+  display: flex;
+  font-size: 26rpx;
+  color: #fff;
+  background: linear-gradient(90deg, #fa4454, #eb1d5a);
+  position: absolute;
+  padding: 0 8rpx;
+  border-radius: 30rpx;
+  left: 50%;
+  /* 定位父级的50% */
+  transform: translateX(-50%);
+  /*自己的50% */
+}
+.landscape .review .goodsBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+.landscape .review .goodsBox .goods {
+  width: 95%;
+  display: flex;
+  background: #FEFFFE;
+  border-radius: 16rpx;
+}
+.landscape .review .goodsBox .goods .picture {
+  width: 172rpx;
+  height: 172rpx;
+  min-width: 172rpx;
+  margin: 16rpx;
+}
+.landscape .review .goodsBox .goods .information {
+  display: flex;
+  flex-direction: column;
+  margin: 16rpx 20rpx 16rpx 0;
+}
+.landscape .review .goodsBox .goods .information .title {
+  font-size: 32rpx;
+  font-weight: normal;
+  color: #323332;
+  line-height: 46rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.landscape .review .goodsBox .goods .information .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 34rpx 0 0;
+}
+.landscape .review .goodsBox .goods .information .info .info-left {
+  display: flex;
+  align-items: center;
+}
+.landscape .review .goodsBox .goods .information .info .info-left .symbol {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #FF2A00;
+  line-height: 44rpx;
+}
+.landscape .review .goodsBox .goods .information .info .info-left .price {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #FF2A00;
+  line-height: 44rpx;
+}
+.landscape .review .goodsBox .goods .information .info .info-left .sell {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 24rpx;
+  margin: 0 0 0 14rpx;
+}
+.landscape .review .goodsBox .goods .information .info .info-right {
+  display: flex;
+}
+.landscape .review .goodsBox .goods .information .info .info-right .buy {
+  width: 122rpx;
+  height: 42rpx;
+  background: linear-gradient(270deg, #FE0D38 0%, #FC811F 100%);
+  border-radius: 40rpx;
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #FEFFFE;
+  line-height: 26rpx;
+}
+.landscape .reply_wrp {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.landscape .reply_wrp .send {
+  width: 100%;
+  min-height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+}
+.landscape .reply_wrp .send .information {
+  width: 95%;
+  display: flex;
+  align-items: center;
+}
+.landscape .reply_wrp .send .information .mike {
+  width: 80rpx;
+  height: 80rpx;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 122rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 18rpx 0 0;
+}
+.landscape .reply_wrp .send .information .mike image {
+  width: 52rpx;
+  height: 52rpx;
+}
+.landscape .reply_wrp .send .information .shopping {
+  display: flex;
+  margin: 0 18rpx 0 0;
+}
+.landscape .reply_wrp .send .information .shopping image {
+  width: 52rpx;
+  height: 52rpx;
+}
+.landscape .reply_wrp .send .information .info {
+  width: 518rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 340rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landscape .reply_wrp .send .information .info .text {
+  display: inline-block;
+  width: 80%;
+  height: 60rpx;
+  margin: 0 0 0 28rpx;
+  border: none;
+  font-size: 28rpx;
+  font-weight: normal;
+  line-height: 28rpx;
+  color: #787878;
+}
+.landscape .reply_wrp .send .information .info image {
+  width: 36rpx;
+  height: 36rpx;
+  margin: 0 28rpx 0 0;
+}
+.landscape .reply_wrp .send .information .add {
+  display: flex;
+  margin: 0 0 0 20rpx;
+}
+.landscape .reply_wrp .send .information .gift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 46rpx 0 24rpx;
+}
+.landscape .reply_wrp .send .information .gift image {
+  width: 52rpx;
+  height: 52rpx;
+}
+.landscape .reply_wrp .send .information .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20rpx 0 0;
+}
+.landscape .reply_wrp .send .information .more image {
+  width: 52rpx;
+  height: 52rpx;
+}
+.landscape .reply_wrp .reply_panel_wrp {
+  overflow: hidden;
+  position: relative;
+}
+.landscape .reply_wrp .reply_panel_wrp .reply_panel {
+  overflow: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 600rpx;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
+}
+.landscape .reply_wrp .reply_panel_wrp .reply_panel[hidden] {
+  display: block;
+}
+.landscape .reply_wrp .reply_panel_wrp .reply_panel.show {
+  height: 600rpx;
+  top: 0;
+}
+.landscape .reply_wrp .reply_panel_wrp .reply_panel:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 2rpx;
+  border-top: 1 rpx solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+.restBox {
+  display: flex;
+  justify-content: center;
+}
+.restBox .rest {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.restBox .rest .rest-top {
+  display: flex;
+  justify-content: flex-end;
+  background: #fff;
+}
+.restBox .rest .rest-top .close {
+  width: 56rpx;
+  height: 42rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #E45E5E;
+  line-height: 42rpx;
+  margin: 26rpx 40rpx 26rpx 0;
+}
+.restBox .rest .rest-center {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 0 0 56rpx;
+}
+.restBox .rest .rest-center .live {
+  display: flex;
+  flex-direction: column;
+  margin: 46rpx 0 0 40rpx;
+}
+.restBox .rest .rest-center .live .live-top {
+  display: flex;
+}
+.restBox .rest .rest-center .live .live-top .title {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 20rpx;
+}
+.restBox .rest .rest-center .live .live-bottom {
+  display: flex;
+}
+.restBox .rest .rest-center .live .live-bottom .microphone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 0 0;
+}
+.restBox .rest .rest-center .live .live-bottom .microphone .microphone-top {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/microphone.png');
+}
+.restBox .rest .rest-center .live .live-bottom .microphone .microphone-top .count {
+  display: inline-block;
+  font-size: 20rpx;
+  color: #fff;
+  background: linear-gradient(90deg, #fa4454, #eb1d5a);
+  position: absolute;
+  padding: 0 8rpx;
+  border-radius: 30rpx;
+  left: 50%;
+  bottom: 0;
+  /* 定位父级的50% */
+  transform: translateX(-50%);
+  /*自己的50% */
+}
+.restBox .rest .rest-center .live .live-bottom .microphone .microphone-bottom .title {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 24rpx;
+}

@@ -1,0 +1,75 @@
+.replacement {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.replacement .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.replacement .contentBox .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.replacement .contentBox .content .content-top {
+  width: 85%;
+  display: flex;
+  margin: 42rpx 0 0;
+}
+.replacement .contentBox .content .content-top .title {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 28rpx;
+}
+.replacement .contentBox .content .content-center {
+  width: 93%;
+  display: flex;
+}
+.replacement .contentBox .content .content-center .form {
+  width: 100%;
+}
+.replacement .contentBox .content .content-center .form .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.replacement .contentBox .content .content-center .form .information .information-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40rpx 0 0;
+}
+.replacement .contentBox .content .content-center .form .information .information-top .code {
+  background: linear-gradient(to right, #7880fc 0%, #2eb3ff 100%);
+  border-radius: 10rpx;
+  font-size: 22rpx;
+  color: #fff;
+}
+.replacement .contentBox .content .content-center .form .information .information-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 76rpx;
+}
+.replacement .contentBox .content .content-center .form .information .information-bottom .enter {
+  width: 680rpx;
+  height: 90rpx;
+  background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+  border-radius: 344rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #FEFFFE;
+  line-height: 28rpx;
+}
+.replacement .van-cell {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+<view class="audit">
+  <view class="contentBox">
+    <view class="content">
+      <view class="start_broadcast">
+        <view class="sign">
+          <view class="line"></view>
+          <text class="title">审核</text>
+        </view>
+        <view class="information">
+          <view class="container" wx:for="{{auditLiveList}}" wx:key="id" data-id="{{item.id}}" data-status="{{item.status}}" bindtap="getAuditDetail">
+            <text class="live_state" wx:if="{{item.status == 2}}">审核中</text>
+            <text class="live_state" style="color:#E45E5E;" wx:else>审核驳回</text>
+            <text class="live_title">{{item.name}}</text>
+            <text class="live_message">{{item.introduce}}</text>
+            <view class="timeWait">
+              <view class="timeWait-left">
+                <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/clock.png"></image>
+                <text class="date">{{item.startTime}}-{{item.endTime}}</text>
+              </view>
+            </view>
+          </view>
+          <van-empty wx:if="{{!auditLiveList.length}}" description="暂无数据" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

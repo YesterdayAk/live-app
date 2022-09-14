@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/live/live",
+    "pages/apply/apply",
+    "pages/manage/manage",
+    "pages/detail/detail",
+    "pages/audience/audience",
+    "pages/agreement/agreement",
+    "pages/update/update",
+    "pages/landscape/landscape",
+    "pages/replacement/replacement",
+    "pages/audit/audit",
+    "pages/audit/auditDetail/auditDetail",
+    "pages/mine/finish/finish",
+    "pages/mine/await/await",
+    "pages/mine/revisePassword/revisePassword"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鸿雁融+",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-stepper": "@vant/weapp/stepper/index"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "selectedColor": "#007AFF",
+    "list": [
+      {
+        "text": "直播",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/live_normal.png",
+        "selectedIconPath": "images/live_active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine_normal.png",
+        "selectedIconPath": "images/mine_active.png"
+      }
+    ]
+  }
+}

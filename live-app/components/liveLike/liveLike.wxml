@@ -1,0 +1,4 @@
+<view class="live-like">
+    <!-- <canvas canvas-id="bubble" style="width:90px;height:400px"></canvas> -->
+    <canvas id="bubble" type="2d" style="width:90px;height:400px"></canvas>
+</view>

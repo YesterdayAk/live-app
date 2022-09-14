@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail">
+  <view class="contentBox">
+    <view class="content">
+      <view class="content-top">
+        <text class="live_state">待开播</text>
+        <text class="live_title">{{liveInfo.name}}</text>
+        <text class="live_message">{{liveInfo.introduce}}</text>
+      </view>
+      <view class="content-bottom">
+        <view class="start" bindtap="start">
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/transcribe.png"></image>
+          <text class="title">立即开播</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

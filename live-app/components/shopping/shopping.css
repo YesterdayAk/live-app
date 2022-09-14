@@ -1,0 +1,108 @@
+.cartBox {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.cartBox .cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 34rpx 0 0;
+}
+.cartBox .cart .shop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.cartBox .cart .shop .shop-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cartBox .cart .shop .shop-top .store {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 34rpx;
+}
+.cartBox .cart .shop .shop-top .store .title {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #323332;
+  line-height: 28rpx;
+}
+.cartBox .cart .shop .shop-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartBox .cart .shop .shop-center .container {
+  width: 90%;
+  display: flex;
+  margin: 0 0 34rpx 0;
+  padding: 0 0 34rpx 0;
+  border-bottom: 2rpx solid #f6f7f6;
+}
+.cartBox .cart .shop .shop-center .container .picture {
+  width: 172rpx;
+  height: 172rpx;
+  min-width: 172rpx;
+}
+.cartBox .cart .shop .shop-center .container .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 16rpx;
+  position: relative;
+}
+.cartBox .cart .shop .shop-center .container .information .title {
+  font-size: 32rpx;
+  font-weight: normal;
+  color: #323332;
+  line-height: 46rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.cartBox .cart .shop .shop-center .container .information .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 34rpx 0 0;
+  position: absolute;
+  bottom: 0;
+}
+.cartBox .cart .shop .shop-center .container .information .info .info-left {
+  display: flex;
+}
+.cartBox .cart .shop .shop-center .container .information .info .info-left .symbol {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #ff2a00;
+  line-height: 44rpx;
+}
+.cartBox .cart .shop .shop-center .container .information .info .info-left .price {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #ff2a00;
+  line-height: 44rpx;
+}
+.cartBox .cart .shop .shop-center .container .information .info .info-right {
+  display: flex;
+}
+.cartBox .cart .shop .shop-center .container .information .info .info-right .inventory {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #989998;
+  line-height: 24rpx;
+}
+.cartBox::-webkit-scrollbar {
+  display: none;
+}

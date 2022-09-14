@@ -1,0 +1,64 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="logo">
+    <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/logo.png"></image>
+  </view>
+  <view class="sign">
+    <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/sign.png"></image>
+  </view>
+  <view class="contentBox">
+    <view class="content">
+      <view class="content-top">
+        <view class="account" wx:for="{{loginWayList}}" wx:key="id" data-id="{{item.id}}" bindtap="getLoginWay">
+          <text class="title">{{item.title}}</text>
+          <view class="line" wx:if="{{active == item.id}}"></view>
+        </view>
+      </view>
+      <view class="content-center">
+        <form class="form" wx:if="{{active == 1}}" bindsubmit="loginSubmit">
+          <view class="information">
+            <view class="information-top">
+              <van-field value="{{ phoneNumber }}" style="width:95%" border="{{false}}" name="phoneNumber" placeholder="请输入手机号" left-icon="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/phone.png" />
+              <view class="line"></view>
+              <van-field value="{{ password }}" style="width:95%" border="{{false}}" name="password" placeholder="请输入密码" type="password" left-icon="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/password.png" />
+            </view>
+            <view class="information-center">
+              <view class="operation">
+                <view class="forget" bindtap="forgetPassword">
+                  <text class="title">忘记密码？</text>
+                </view>
+              </view>
+            </view>
+            <view class="information-bottom">
+              <van-button custom-class="enter" form-type="submit">登录</van-button>
+            </view>
+          </view>
+        </form>
+        <form class="form" wx:else bindsubmit="loginCodeSubmit">
+          <view class="information">
+            <view class="information-top">
+              <van-field value="{{ phoneNumber }}" style="width:95%" border="{{false}}" name="phoneNumber" placeholder="请输入手机号" left-icon="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/phone.png" bind:input="onInput" />
+              <view class="line"></view>
+              <van-field value="{{ captcha }}" style="width:95%" border="{{false}}" name="captcha" placeholder="请输入验证码" left-icon="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/password.png">
+                <van-button wx:if="{{showCode}}" custom-class="code" slot="button" size="small" bindtap="sendSms">
+                  获取验证码
+                </van-button>
+                <van-button wx:else size="small" custom-class="code" slot="button">{{ timer }}秒后重新获取</van-button>
+              </van-field>
+            </view>
+            <view class="information-bottom">
+              <van-button custom-class="enter" form-type="submit">登录</van-button>
+            </view>
+          </view>
+        </form>
+      </view>
+    </view>
+  </view>
+  <view class="remindBox">
+    <view class="remind" bindtap="getAgreementInfo">
+      <text class="message">登录即代表同意</text>
+      <text class="agreement">《工会直播协议》</text>
+    </view>
+  </view>
+  <van-toast id="van-toast" />
+</view>

@@ -1,0 +1,341 @@
+.apply {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.apply .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.apply .contentBox .content {
+  width: 100%;
+  display: flex;
+}
+.apply .contentBox .content .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.apply .contentBox .content .information .equipment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .equipment .equipment-left {
+  display: flex;
+}
+.apply .contentBox .content .information .equipment .equipment-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .equipment .equipment-right {
+  display: flex;
+}
+.apply .contentBox .content .information .equipment .equipment-right .computer {
+  display: flex;
+  align-items: center;
+  margin: 0 130rpx 0 0;
+}
+.apply .contentBox .content .information .equipment .equipment-right .computer image {
+  width: 44rpx;
+  height: 36rpx;
+  margin: 0 14rpx 0 0;
+}
+.apply .contentBox .content .information .equipment .equipment-right .computer .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .equipment .equipment-right .computer .title.active {
+  color: #333333;
+}
+.apply .contentBox .content .information .equipment .equipment-right .mobile {
+  display: flex;
+  align-items: center;
+  margin: 0 76rpx 0 0;
+}
+.apply .contentBox .content .information .equipment .equipment-right .mobile image {
+  width: 26rpx;
+  height: 46rpx;
+  margin: 0 12rpx 0 0;
+}
+.apply .contentBox .content .information .equipment .equipment-right .mobile .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .equipment .equipment-right .mobile .title.active {
+  color: #333333;
+}
+.apply .contentBox .content .information .shape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .shape .shape-left {
+  display: flex;
+}
+.apply .contentBox .content .information .shape .shape-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .shape .shape-right {
+  display: flex;
+}
+.apply .contentBox .content .information .shape .shape-right .level {
+  display: flex;
+  align-items: center;
+  margin: 0 130rpx 0 0;
+}
+.apply .contentBox .content .information .shape .shape-right .level image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 14rpx 0 0;
+}
+.apply .contentBox .content .information .shape .shape-right .level .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .shape .shape-right .level .title.active {
+  color: #333333;
+}
+.apply .contentBox .content .information .shape .shape-right .vertical {
+  display: flex;
+  align-items: center;
+  margin: 0 76rpx 0 0;
+}
+.apply .contentBox .content .information .shape .shape-right .vertical image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 12rpx 0 0;
+}
+.apply .contentBox .content .information .shape .shape-right .vertical .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .shape .shape-right .vertical .title.active {
+  color: #333333;
+}
+.apply .contentBox .content .information .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .date .date-left {
+  display: flex;
+}
+.apply .contentBox .content .information .date .date-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .date .date-right {
+  display: flex;
+}
+.apply .contentBox .content .information .date .date-right .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #CCCCCC;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .date .date-right .time {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+}
+.apply .contentBox .content .information .subject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .subject .subject-left {
+  display: flex;
+}
+.apply .contentBox .content .information .subject .subject-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .subject .subject-right {
+  display: flex;
+}
+.apply .contentBox .content .information .describe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .describe .describe-left {
+  display: flex;
+}
+.apply .contentBox .content .information .describe .describe-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .describe .describe-right {
+  display: flex;
+}
+.apply .contentBox .content .information .picture,
+.apply .contentBox .content .information .video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .picture .picture-left,
+.apply .contentBox .content .information .video .picture-left,
+.apply .contentBox .content .information .picture .video-left,
+.apply .contentBox .content .information .video .video-left {
+  display: flex;
+}
+.apply .contentBox .content .information .picture .picture-left .title,
+.apply .contentBox .content .information .video .picture-left .title,
+.apply .contentBox .content .information .picture .video-left .title,
+.apply .contentBox .content .information .video .video-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .picture .picture-right,
+.apply .contentBox .content .information .video .picture-right,
+.apply .contentBox .content .information .picture .video-right,
+.apply .contentBox .content .information .video .video-right {
+  display: flex;
+}
+.apply .contentBox .content .information .picture .picture-right .upload,
+.apply .contentBox .content .information .video .picture-right .upload,
+.apply .contentBox .content .information .picture .video-right .upload,
+.apply .contentBox .content .information .video .video-right .upload,
+.apply .contentBox .content .information .picture .picture-right .remove,
+.apply .contentBox .content .information .video .picture-right .remove,
+.apply .contentBox .content .information .picture .video-right .remove,
+.apply .contentBox .content .information .video .video-right .remove {
+  display: flex;
+  flex-direction: column;
+}
+.apply .contentBox .content .information .picture .picture-right .upload .title,
+.apply .contentBox .content .information .video .picture-right .upload .title,
+.apply .contentBox .content .information .picture .video-right .upload .title,
+.apply .contentBox .content .information .video .video-right .upload .title,
+.apply .contentBox .content .information .picture .picture-right .remove .title,
+.apply .contentBox .content .information .video .picture-right .remove .title,
+.apply .contentBox .content .information .picture .video-right .remove .title,
+.apply .contentBox .content .information .video .video-right .remove .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .picture .picture-right .upload .line,
+.apply .contentBox .content .information .video .picture-right .upload .line,
+.apply .contentBox .content .information .picture .video-right .upload .line,
+.apply .contentBox .content .information .video .video-right .upload .line,
+.apply .contentBox .content .information .picture .picture-right .remove .line,
+.apply .contentBox .content .information .video .picture-right .remove .line,
+.apply .contentBox .content .information .picture .video-right .remove .line,
+.apply .contentBox .content .information .video .video-right .remove .line {
+  width: 106rpx;
+  height: 1px;
+  background: #007AFF;
+  margin: 2px 0 0;
+}
+.apply .contentBox .content .information .mode,
+.apply .contentBox .content .information .interact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply .contentBox .content .information .mode .mode-left,
+.apply .contentBox .content .information .interact .mode-left,
+.apply .contentBox .content .information .mode .interact-left,
+.apply .contentBox .content .information .interact .interact-left {
+  display: flex;
+}
+.apply .contentBox .content .information .mode .mode-left .title,
+.apply .contentBox .content .information .interact .mode-left .title,
+.apply .contentBox .content .information .mode .interact-left .title,
+.apply .contentBox .content .information .interact .interact-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.apply .contentBox .content .information .mode .mode-right,
+.apply .contentBox .content .information .interact .mode-right,
+.apply .contentBox .content .information .mode .interact-right,
+.apply .contentBox .content .information .interact .interact-right {
+  display: flex;
+}
+.apply .contentBox .content .information .remind {
+  display: flex;
+  justify-content: flex-end;
+}
+.apply .contentBox .content .information .remind .message {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #C5C5C5;
+  line-height: 30rpx;
+  margin: 22rpx 22rpx 32rpx 0;
+}
+.apply .contentBox .content .information .operation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 70rpx;
+  background: #FEFFFE;
+  padding: 6rpx 0;
+}
+.apply .contentBox .content .information .operation .cancel {
+  width: 308rpx;
+  height: 90rpx;
+  border-radius: 522rpx;
+  border: 2rpx solid #007AFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 28rpx;
+}
+.apply .contentBox .content .information .operation .submit {
+  width: 308rpx;
+  height: 90rpx;
+  background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+  border-radius: 214rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 46rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #FEFFFE;
+  line-height: 28rpx;
+}
+.apply .van-cell {
+  display: flex;
+  align-items: center;
+  height: 94rpx;
+}
+.apply .van-uploader__preview-image {
+  width: 60rpx !important;
+  height: 60rpx !important;
+  margin: 10rpx 0 0;
+}
+.apply .van-checkbox-group {
+  display: flex;
+}

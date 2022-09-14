@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "comment-list": "../../components/comment/comment",
+    "brief-info": "../../components/brief/brief",
+    "shopping-list": "../../components/shopping/shopping",
+    "present-list": "../../components/present/present",
+    "live-like": "../../components/liveLike/liveLike",
+    "live-love": "../../components/love/index",
+    "mp-emoji": "../../components/emoji/index"
+  }
+}

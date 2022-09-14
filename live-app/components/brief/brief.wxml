@@ -1,0 +1,8 @@
+<!--components/brief/brief.wxml-->
+<view class="brief" catchtouchmove="touchMove" hidden="{{!showBrief}}" style="height:{{windowHeight*(1 / phoneHeight)-movieHeight-introduceHeight-bottomDistance*(1 / phoneHeight)}}rpx;bottom:{{bottomDistance*(1 / phoneHeight)}}rpx">
+  <view class="contentBox">
+    <div class="content">
+      <text class="message">{{liveInfo.introduce}}</text>
+    </div>
+  </view>
+</view>

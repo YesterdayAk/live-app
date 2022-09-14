@@ -1,0 +1,33 @@
+<!--pages/manage/manage.wxml-->
+<view class="manage">
+  <view class="search">
+    <van-search value="{{ searchValue }}" placeholder="搜索手机号" bind:search="onSearch" />
+  </view>
+  <view class="contentBox">
+    <view class="content">
+      <view class="information">
+        <view class="container" wx:for="{{managerList}}" wx:key="userId">
+          <view class="container-left">
+            <view style="position:relative;">
+              <image src="{{item.avatar}}"></image>
+              <image wx:if="{{item.isAdmin == 1}}" style="width:26rpx;height:28rpx;position:absolute;bottom:8rpx;right:0;" src="../../images/general_manage_sign.png"></image>
+            </view>
+            <view class="people">
+              <text class="info">{{item.realname}}-{{item.phone}}</text>
+              <text class="labor">{{item.laborName}}</text>
+            </view>
+          </view>
+          <view class="container-right">
+            <view class="manager" wx:if="{{item.isAdmin == 1}}" data-userId="{{item.userId}}" data-index="{{index}}" bindtap="removeManager">
+              <text class="title">解除管理员</text>
+            </view>
+            <view class="manager" wx:else data-userId="{{item.userId}}" data-isAdmin="{{item.isAdmin}}" data-index="{{index}}" bindtap="setManager">
+              <text class="title">设置管理员</text>
+            </view>
+          </view>
+        </view>
+        <van-empty wx:if="{{!managerList.length}}" description="暂无数据" />
+      </view>
+    </view>
+  </view>
+</view>

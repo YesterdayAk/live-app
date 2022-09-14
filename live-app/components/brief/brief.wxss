@@ -1,0 +1,23 @@
+.brief {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  left: 0;
+}
+.brief .contentBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.brief .contentBox .content {
+  width: 90%;
+  display: flex;
+}
+.brief .contentBox .content .message {
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #323332;
+  line-height: 50rpx;
+  margin: 24rpx 0 36rpx;
+}

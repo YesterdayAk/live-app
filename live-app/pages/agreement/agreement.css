@@ -1,0 +1,13 @@
+.agreement {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.agreement .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.agreement .contentBox .content {
+  width: 90%;
+  display: flex;
+  margin: 30rpx 0;
+}

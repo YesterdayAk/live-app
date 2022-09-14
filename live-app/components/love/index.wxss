@@ -1,0 +1,6 @@
+/* pages/waveimage/waveimage.wxss */
+.thumb_container {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}

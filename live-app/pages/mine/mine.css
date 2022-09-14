@@ -1,0 +1,211 @@
+.mine {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.mine .headerBox {
+  display: flex;
+  justify-content: center;
+}
+.mine .headerBox .header {
+  display: flex;
+  width: 100%;
+  height: 172rpx;
+  background: url("https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/header_bg.png");
+  background-size: 100% 100%;
+}
+.mine .headerBox .header .people {
+  display: flex;
+  flex-direction: column;
+  margin: 48rpx 0 0 56rpx;
+}
+.mine .headerBox .header .people .info {
+  display: flex;
+  align-items: center;
+}
+.mine .headerBox .header .people .info .department {
+  max-width: 540rpx;
+  font-size: 36rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 36rpx;
+}
+.mine .headerBox .header .people .info image {
+  width: 32rpx;
+  height: 32rpx;
+  margin: 0 0 0 10rpx;
+}
+.mine .headerBox .header .people .phone {
+  font-size: 24rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 24rpx;
+  margin: 20rpx 0 0;
+}
+.mine .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.mine .contentBox .content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24rpx 0 0;
+}
+.mine .contentBox .content .content-top {
+  width: 100%;
+  display: flex;
+  border-radius: 20rpx;
+  background: #fff;
+}
+.mine .contentBox .content .content-top .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mine .contentBox .content .content-top .information .information-top {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #F7F7F7;
+}
+.mine .contentBox .content .content-top .information .information-top .title {
+  font-size: 30rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 30rpx;
+  margin: 24rpx 0 24rpx 32rpx;
+}
+.mine .contentBox .content .content-top .information .information-center {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0 42rpx 0;
+}
+.mine .contentBox .content .content-top .information .information-center .check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 66rpx;
+}
+.mine .contentBox .content .content-top .information .information-center .check .check_sign {
+  width: 60rpx;
+  height: 60rpx;
+  background: url("https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/check_sign.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+.mine .contentBox .content .content-top .information .information-center .check .check_sign .count {
+  display: flex;
+  background: #007AFF;
+  border-radius: 6px;
+  padding: 4rpx 12rpx;
+  font-size: 16rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 16rpx;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+}
+.mine .contentBox .content .content-top .information .information-center .check .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+  margin: 20rpx 0 0;
+}
+.mine .contentBox .content .content-top .information .information-center .await {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mine .contentBox .content .content-top .information .information-center .await .await_sign {
+  width: 60rpx;
+  height: 60rpx;
+  background: url("https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/await_sign.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+.mine .contentBox .content .content-top .information .information-center .await .await_sign .count {
+  display: flex;
+  background: #007AFF;
+  border-radius: 6px;
+  padding: 4rpx 12rpx;
+  font-size: 16rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 16rpx;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+}
+.mine .contentBox .content .content-top .information .information-center .await .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+  margin: 20rpx 0 0;
+}
+.mine .contentBox .content .content-top .information .information-center .finish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mine .contentBox .content .content-top .information .information-center .finish .finish_sign {
+  width: 60rpx;
+  height: 60rpx;
+  background: url("https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/finish_sign.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+.mine .contentBox .content .content-top .information .information-center .finish .finish_sign .count {
+  display: flex;
+  background: #007AFF;
+  border-radius: 6px;
+  padding: 4rpx 12rpx;
+  font-size: 16rpx;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 16rpx;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+}
+.mine .contentBox .content .content-top .information .information-center .finish .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+  margin: 20rpx 0 0;
+}
+.mine .contentBox .content .content-top .information .information-center .start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 54rpx 0 0;
+}
+.mine .contentBox .content .content-top .information .information-center .start .start_sign {
+  width: 60rpx;
+  height: 60rpx;
+  background: url("https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/start_sign.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+.mine .contentBox .content .content-top .information .information-center .start .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+  margin: 20rpx 0 0;
+}
+.mine .contentBox .content .content-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 32rpx 0 0;
+}
+.mine .van-cell {
+  display: flex;
+  align-items: center;
+  height: 96rpx;
+}

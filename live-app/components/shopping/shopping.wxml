@@ -1,0 +1,39 @@
+<!--components/shopping/shopping.wxml-->
+
+<van-action-sheet show="{{ showShopping }}" bind:close="onClose" bind:select="onSelect">
+  <view class="cartBox" style="height:{{windowHeight*(1 / phoneHeight)-movieHeight-bottomDistance*(1 / phoneHeight)}}rpx">
+    <view class="cart">
+      <view class="shop" wx:for="{{shoppingList}}" wx:key="index">
+        <view class="shop-top">
+          <view class="store">
+            <text class="title">{{item.deptName}}</text>
+          </view>
+        </view>
+        <view class="shop-center">
+          <view class="container" wx:for="{{item.liveGoodsList}}" wx:key="goodsId" wx:for-item="liveGoods">
+
+            <wxs module="m1">
+              var getPicture = function (goodsPicture) {
+                return goodsPicture ? goodsPicture.split(',')[0] : ''
+              }
+              module.exports.getPicture = getPicture
+            </wxs>
+            <image class="picture" src="{{m1.getPicture(liveGoods.goodsPicture)}}" mode="aspectFill" alt="" />
+            <view class="information">
+              <text class="title">{{liveGoods.goodsName}}</text>
+              <view class="info">
+                <view class="info-left">
+                  <text class="symbol">￥</text>
+                  <text class="price">{{ liveGoods.price }}</text>
+                </view>
+                <view class="info-right">
+                  <text class="inventory">库存：{{ liveGoods.stock }}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</van-action-sheet>

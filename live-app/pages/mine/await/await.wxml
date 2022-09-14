@@ -1,0 +1,26 @@
+<view class="await">
+  <view class="contentBox">
+    <view class="content">
+      <view class="start_broadcast">
+        <view class="sign">
+          <view class="line"></view>
+          <text class="title">开播</text>
+        </view>
+        <view class="information">
+          <view class="container" wx:for="{{awaitLiveList}}" wx:key="id" data-id="{{item.id}}" bindtap="getLiveDetail">
+            <text class="live_state">待开播</text>
+            <text class="live_title">{{item.name}}</text>
+            <text class="live_message">{{item.introduce}}</text>
+            <view class="timeWait">
+              <view class="timeWait-left">
+                <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/clock.png"></image>
+                <text class="date">{{item.startTime}}-{{item.endTime}}</text>
+              </view>
+            </view>
+          </view>
+          <van-empty wx:if="{{!awaitLiveList.length}}" description="暂无数据" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

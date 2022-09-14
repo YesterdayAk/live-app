@@ -1,0 +1,69 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+  <view class="headerBox">
+    <view class="header">
+      <view class="people">
+        <view class="info">
+          <text class="department">{{userInfo.laborName}}</text>
+          <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/badge.png"></image>
+        </view>
+        <text class="phone">{{userInfo.phone}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="contentBox">
+    <view class="content">
+      <view class="content-top">
+        <view class="information">
+          <view class="information-top">
+            <text class="title">直播管理</text>
+          </view>
+          <view class="information-center">
+            <view class="check" bindtap="getAudit">
+              <view class="check_sign">
+                <view class="count" wx:if="{{liveCountInfo.underReviewCount}}">{{liveCountInfo.underReviewCount}}</view>
+              </view>
+              <text class="title">审核</text>
+            </view>
+            <view class="await" bindtap="getAwait">
+              <view class="await_sign">
+                <view class="count" wx:if="{{liveCountInfo.stayBeginShowCount}}">{{liveCountInfo.stayBeginShowCount}}</view>
+              </view>
+              <text class="title">待直播</text>
+            </view>
+            <view class="finish" bindtap="getFinish">
+              <view class="finish_sign">
+                <view class="count" wx:if="{{liveCountInfo.finishedCount}}">{{liveCountInfo.finishedCount}}</view>
+              </view>
+              <text class="title">已结束</text>
+            </view>
+            <view class="start" bindtap="start">
+              <view class="start_sign"></view>
+              <text class="title">发起直播</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="content-center">
+        <van-cell is-link bindtap="getManageInfo">
+          <view slot="title" style="display:flex;align-items: center;">
+            <image style="width:36rpx;height:36rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/manager.png"></image>
+            <view class="van-cell-text" style="margin: 0 0 0 12rpx;">管理员管理</view>
+          </view>
+        </van-cell>
+        <van-cell is-link bindtap="getReplacement">
+          <view slot="title" style="display:flex;align-items: center;">
+            <image style="width:36rpx;height:36rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/mobile.png"></image>
+            <view class="van-cell-text" style="margin: 0 0 0 12rpx;">更换手机号</view>
+          </view>
+        </van-cell>
+        <van-cell is-link bindtap="revisePassword">
+          <view slot="title" style="display:flex;align-items: center;">
+            <image style="width:36rpx;height:36rpx;" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/code.png"></image>
+            <view class="van-cell-text" style="margin: 0 0 0 12rpx;">修改密码</view>
+          </view>
+        </van-cell>
+      </view>
+    </view>
+  </view>
+</view>

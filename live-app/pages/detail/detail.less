@@ -1,0 +1,80 @@
+.detail {
+    min-height: 100vh;
+    background: #FAFAFA;
+
+    .contentBox {
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .content-top {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background: #FEFFFE;
+
+                .live_state {
+                    font-size: 26rpx;
+                    font-weight: normal;
+                    color: #007AFF;
+                    line-height: 26rpx;
+                    margin: 30rpx 0 0 38rpx;
+                }
+
+                .live_title {
+                    font-size: 32rpx;
+                    font-weight: 600;
+                    color: #333333;
+                    line-height: 46rpx;
+                    margin: 24rpx 0 0 38rpx;
+                }
+
+                .live_message {
+                    font-size: 28rpx;
+                    font-weight: normal;
+                    color: #999999;
+                    line-height: 42rpx;
+                    margin: 24rpx 38rpx 30rpx;
+                    text-indent: 50rpx;
+                }
+            }
+
+            .content-bottom {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 78rpx;
+                left: 0;
+
+                .start {
+                    width: 430rpx;
+                    height: 90rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+                    border-radius: 80rpx;
+
+                    image {
+                        width: 46rpx;
+                        height: 26rpx;
+                    }
+
+                    .title {
+                        font-size: 32rpx;
+                        font-weight: normal;
+                        color: #FEFFFE;
+                        line-height: 28rpx;
+                        margin: 0 0 0 10rpx;
+                    }
+                }
+            }
+        }
+    }
+}

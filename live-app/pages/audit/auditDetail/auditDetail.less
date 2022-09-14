@@ -1,0 +1,257 @@
+.auditDetail {
+    min-height: 100vh;
+    background: #FAFAFA;
+
+    .contentBox {
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .content-top {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #FEFFFE;
+                box-shadow: 0 4rpx 4rpx 2rpx rgba(0, 0, 0, 0.05);
+
+                .sign {
+                    width: 90%;
+                    display: flex;
+                    margin: 30rpx 0 24rpx;
+
+                    image {
+                        width: 100%;
+                        height: 352rpx;
+                    }
+                }
+
+                .introduce {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .introduce-top {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .title {
+                            font-size: 32rpx;
+                            font-weight: normal;
+                            color: #333333;
+                            line-height: 46rpx;
+                        }
+
+                        .state {
+                            font-size: 26rpx;
+                            font-weight: normal;
+                            color: #007AFF;
+                            line-height: 26rpx;
+                        }
+                    }
+
+                    .introduce-bottom {
+                        width:100%;
+                        display: flex;
+                        margin: 14rpx 0 18rpx;
+
+                        .message {
+                            font-size: 28rpx;
+                            font-weight: normal;
+                            color: #999999;
+                            line-height: 42rpx;
+                            text-indent: 50rpx;
+                        }
+                    }
+
+                }
+            }
+
+            .content-center {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .information {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .equipment {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .equipment-left {
+                            display: flex;
+
+                            .title {
+                                font-size: 26rpx;
+                                font-weight: normal;
+                                color: #333333;
+                                line-height: 30rpx;
+                            }
+                        }
+
+                        .equipment-right {
+                            display: flex;
+
+
+                            .mobile {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 76rpx 0 0;
+
+                                image {
+                                    width: 26rpx;
+                                    height: 46rpx;
+                                    margin: 0 12rpx 0 0;
+                                }
+
+                                .title {
+                                    font-size: 26rpx;
+                                    font-weight: normal;
+                                    color: #999999;
+                                    line-height: 30rpx;
+
+                                    &.active {
+                                        color: #333333;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .shape {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .shape-left {
+                            display: flex;
+
+                            .title {
+                                font-size: 26rpx;
+                                font-weight: normal;
+                                color: #333333;
+                                line-height: 30rpx;
+                            }
+                        }
+
+                        .shape-right {
+                            display: flex;
+
+
+                            .screen {
+                                display: flex;
+                                align-items: center;
+                                margin: 0 76rpx 0 0;
+
+                                image {
+                                    width: 40rpx;
+                                    height: 40rpx;
+                                    margin: 0 12rpx 0 0;
+                                }
+
+                                .title {
+                                    font-size: 26rpx;
+                                    font-weight: normal;
+                                    color: #999999;
+                                    line-height: 30rpx;
+
+                                    &.active {
+                                        color: #333333;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .start_time,
+                    .end_time {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 6rpx 0;
+
+                        .start_time_left,
+                        .end_time_left {
+                            display: flex;
+
+                            .title {
+                                font-size: 26rpx;
+                                font-weight: normal;
+                                color: #333333;
+                                line-height: 30rpx;
+                            }
+                        }
+
+                        .start_time_right,
+                        .end_time_right {
+                            display: flex;
+
+                            .time {
+                                font-size: 26rpx;
+                                font-weight: normal;
+                                color: #333333;
+                                line-height: 26rpx;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .content-bottom {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 78rpx;
+                left: 0;
+
+                .revise {
+                    width: 308rpx;
+                    height: 90rpx;
+                    background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+                    border-radius: 282rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    .title {
+                        font-size: 28rpx;
+                        font-weight: normal;
+                        color: #FEFFFE;
+                        line-height: 28rpx;
+                    }
+                }
+
+                .revocation {
+                    width: 308rpx;
+                    height: 90rpx;
+                    border-radius: 264rpx;
+                    border: 2rpx solid #007AFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 0 0 46rpx;
+
+                    .title {
+                        font-size: 28rpx;
+                        font-weight: normal;
+                        color: #007AFF;
+                        line-height: 28rpx;
+                    }
+                }
+            }
+        }
+    }
+}

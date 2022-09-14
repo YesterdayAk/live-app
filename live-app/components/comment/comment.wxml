@@ -1,0 +1,19 @@
+<!--components/comment/comment.wxml-->
+<view class="comment">
+  <scroll-view class="comment_scroll" id="commentScroll" scroll-y="true" style="height: 438rpx;" scroll-with-animation="true" scroll-into-view="{{toView}}">
+    <view class="comment_list">
+      <view class="comment_item_container" wx:for="{{commentList}}" wx:key="id">
+        <view class="comment_item">
+          <view class="comment_item_left">
+            <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/profile.png"></image>
+          </view>
+          <view class="comment_item_right">
+            <text class="name">{{item.name}}</text>
+            <text class="message">{{item.message}}</text>
+          </view>
+        </view>
+      </view>
+      <view id="toView"></view>
+    </view>
+  </scroll-view>
+</view>

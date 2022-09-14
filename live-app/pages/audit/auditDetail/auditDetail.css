@@ -1,0 +1,223 @@
+.auditDetail {
+  min-height: 100vh;
+  background: #FAFAFA;
+}
+.auditDetail .contentBox {
+  display: flex;
+  justify-content: center;
+}
+.auditDetail .contentBox .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.auditDetail .contentBox .content .content-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FEFFFE;
+  box-shadow: 0 4rpx 4rpx 2rpx rgba(0, 0, 0, 0.05);
+}
+.auditDetail .contentBox .content .content-top .sign {
+  width: 90%;
+  display: flex;
+  margin: 30rpx 0 24rpx;
+}
+.auditDetail .contentBox .content .content-top .sign image {
+  width: 100%;
+  height: 352rpx;
+}
+.auditDetail .contentBox .content .content-top .introduce {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.auditDetail .contentBox .content .content-top .introduce .introduce-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.auditDetail .contentBox .content .content-top .introduce .introduce-top .title {
+  font-size: 32rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 46rpx;
+}
+.auditDetail .contentBox .content .content-top .introduce .introduce-top .state {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 26rpx;
+}
+.auditDetail .contentBox .content .content-top .introduce .introduce-bottom {
+  width: 100%;
+  display: flex;
+  margin: 14rpx 0 18rpx;
+}
+.auditDetail .contentBox .content .content-top .introduce .introduce-bottom .message {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 42rpx;
+  text-indent: 50rpx;
+}
+.auditDetail .contentBox .content .content-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.auditDetail .contentBox .content .content-center .information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.auditDetail .contentBox .content .content-center .information .equipment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-left {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-right {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-right .mobile {
+  display: flex;
+  align-items: center;
+  margin: 0 76rpx 0 0;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-right .mobile image {
+  width: 26rpx;
+  height: 46rpx;
+  margin: 0 12rpx 0 0;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-right .mobile .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.auditDetail .contentBox .content .content-center .information .equipment .equipment-right .mobile .title.active {
+  color: #333333;
+}
+.auditDetail .contentBox .content .content-center .information .shape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-left {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-right {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-right .screen {
+  display: flex;
+  align-items: center;
+  margin: 0 76rpx 0 0;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-right .screen image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 12rpx 0 0;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-right .screen .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #999999;
+  line-height: 30rpx;
+}
+.auditDetail .contentBox .content .content-center .information .shape .shape-right .screen .title.active {
+  color: #333333;
+}
+.auditDetail .contentBox .content .content-center .information .start_time,
+.auditDetail .contentBox .content .content-center .information .end_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rpx 0;
+}
+.auditDetail .contentBox .content .content-center .information .start_time .start_time_left,
+.auditDetail .contentBox .content .content-center .information .end_time .start_time_left,
+.auditDetail .contentBox .content .content-center .information .start_time .end_time_left,
+.auditDetail .contentBox .content .content-center .information .end_time .end_time_left {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .start_time .start_time_left .title,
+.auditDetail .contentBox .content .content-center .information .end_time .start_time_left .title,
+.auditDetail .contentBox .content .content-center .information .start_time .end_time_left .title,
+.auditDetail .contentBox .content .content-center .information .end_time .end_time_left .title {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 30rpx;
+}
+.auditDetail .contentBox .content .content-center .information .start_time .start_time_right,
+.auditDetail .contentBox .content .content-center .information .end_time .start_time_right,
+.auditDetail .contentBox .content .content-center .information .start_time .end_time_right,
+.auditDetail .contentBox .content .content-center .information .end_time .end_time_right {
+  display: flex;
+}
+.auditDetail .contentBox .content .content-center .information .start_time .start_time_right .time,
+.auditDetail .contentBox .content .content-center .information .end_time .start_time_right .time,
+.auditDetail .contentBox .content .content-center .information .start_time .end_time_right .time,
+.auditDetail .contentBox .content .content-center .information .end_time .end_time_right .time {
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #333333;
+  line-height: 26rpx;
+}
+.auditDetail .contentBox .content .content-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 78rpx;
+  left: 0;
+}
+.auditDetail .contentBox .content .content-bottom .revise {
+  width: 308rpx;
+  height: 90rpx;
+  background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+  border-radius: 282rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auditDetail .contentBox .content .content-bottom .revise .title {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #FEFFFE;
+  line-height: 28rpx;
+}
+.auditDetail .contentBox .content .content-bottom .revocation {
+  width: 308rpx;
+  height: 90rpx;
+  border-radius: 264rpx;
+  border: 2rpx solid #007AFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 46rpx;
+}
+.auditDetail .contentBox .content .content-bottom .revocation .title {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #007AFF;
+  line-height: 28rpx;
+}

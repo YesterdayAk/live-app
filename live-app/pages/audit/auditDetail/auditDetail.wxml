@@ -1,0 +1,80 @@
+<!--pages/audit/auditDetail/auditDetail.wxml-->
+<view class="auditDetail">
+  <view class="contentBox">
+    <view class="content">
+      <view class="content-top">
+        <view class="sign">
+          <image mode="aspectFill" src="{{liveInfo.cover}}"></image>
+        </view>
+        <view class="introduce">
+          <view class="introduce-top">
+            <text class="titlte">{{liveInfo.name}}</text>
+            <text class="state">审核中</text>
+          </view>
+          <view class="introduce-bottom">
+            <text class="message">{{liveInfo.introduce}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="content-center">
+        <view class="information">
+          <van-cell>
+            <view class="equipment" use-label-slot>
+              <view class="equipment-left">
+                <text class="title">直播设备</text>
+              </view>
+              <view class="equipment-right">
+                <view class="mobile">
+                  <image src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/mobile_active.png"></image>
+                  <text class="title active">手机</text>
+                </view>
+              </view>
+            </view>
+          </van-cell>
+          <van-cell>
+            <view class="shape" use-label-slot>
+              <view class="shape-left">
+                <text class="title">直播形式</text>
+              </view>
+              <view class="shape-right">
+                <view class="screen">
+                  <image wx:if="{{liveInfo.liveForm ==0}}" src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/levelScreen_active.png"></image>
+                  <image wx:else src="https://res1.qdszgh.cn/%E9%B8%BF%E9%9B%81%E8%9E%8D%E7%9B%B4%E6%92%AD/verticalScreen_active.png"></image>
+                  <text class="title active">{{liveInfo.liveForm == 0?'横屏':'竖屏'}}</text>
+                </view>
+              </view>
+            </view>
+          </van-cell>
+          <van-cell>
+            <view class="start_time">
+              <view class="start_time_left">
+                <text class="title">直播开始时间</text>
+              </view>
+              <view class="start_time_right">
+                <text class="time">{{liveInfo.startTime}}</text>
+              </view>
+            </view>
+          </van-cell>
+          <van-cell>
+            <view class="end_time">
+              <view class="end_time_left">
+                <text class="title">直播结束时间</text>
+              </view>
+              <view class="end_time_right">
+                <text class="time">{{liveInfo.endTime}}</text>
+              </view>
+            </view>
+          </van-cell>
+        </view>
+      </view>
+      <view class="content-bottom">
+        <view class="revise" bindtap="getReviseInfo">
+          <text class="title">修改</text>
+        </view>
+        <view class="revocation" bindtap="revocationApply">
+          <text class="title">撤销审核</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

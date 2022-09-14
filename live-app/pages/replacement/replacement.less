@@ -1,0 +1,91 @@
+.replacement {
+    min-height: 100vh;
+    background: #FAFAFA;
+
+    .contentBox {
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .content-top {
+                width: 85%;
+                display: flex;
+                margin: 42rpx 0 0;
+
+                .title {
+                    font-size: 28rpx;
+                    font-weight: normal;
+                    color: #333333;
+                    line-height: 28rpx;
+                }
+            }
+
+            .content-center {
+                width: 93%;
+                display: flex;
+
+                .form {
+                    width: 100%;
+
+                    .information {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .information-top {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin: 40rpx 0 0;
+
+                            .code {
+                                background: linear-gradient(to right,
+                                        rgb(120, 128, 252) 0%,
+                                        rgb(46, 179, 255) 100%);
+                                border-radius: 10rpx;
+                                font-size: 22rpx;
+                                color: #fff;
+                            }
+
+                        }
+
+                        .information-bottom {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            bottom: 76rpx;
+
+                            .enter {
+
+                                width: 680rpx;
+                                height: 90rpx;
+                                background: linear-gradient(315deg, #1D77FF 0%, #6EBEFF 100%);
+                                border-radius: 344rpx;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 28rpx;
+                                font-weight: normal;
+                                color: #FEFFFE;
+                                line-height: 28rpx;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .van-cell {
+        display: flex;
+        align-items: center;
+    }
+}
